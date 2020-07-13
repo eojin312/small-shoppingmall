@@ -4,8 +4,12 @@ import lombok.Getter;
 
 import javax.persistence.*;
 
+/**
+ * 상품 entity
+ */
 @Getter
 @Entity
+@DiscriminatorColumn(name = "dtype")
 public class Item {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)

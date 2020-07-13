@@ -3,7 +3,9 @@ package hachi.smallshoppingmall.domain;
 import lombok.Getter;
 
 import javax.persistence.*;
-
+/**
+ * 배달 entity
+ */
 @Getter
 @Entity
 public class Delivery {
