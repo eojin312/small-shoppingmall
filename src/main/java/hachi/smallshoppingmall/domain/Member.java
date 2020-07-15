@@ -22,8 +22,9 @@ public class Member {
     private String username;
     private String password;
 
-    @Embedded
-    private Address address;
+    @OneToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "delivery_id")
+    private Delivery delivery;
 
     /**
      * 1:N
@@ -31,5 +32,4 @@ public class Member {
      */
     @OneToMany(mappedBy = "member")
     private List<Order> orders = new ArrayList<>();
-
 }
