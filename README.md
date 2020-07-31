@@ -8,7 +8,7 @@ simple board 프로젝트를 참고하여 응용해서 만드는 쇼핑몰 프�
 - spring data jpa
 - jpa
   - jpql
-  - querydsl
+  - querydsl 을 중심적으로 할 예정
 - thymeleaf
 - h2
 
